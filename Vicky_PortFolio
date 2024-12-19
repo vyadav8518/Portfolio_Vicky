@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicky Kumar - Software Developer Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-color: #1f2937;
+            --bg-color: #f8fafc;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        header {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        h2 { font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--primary-color); }
+        h3 { font-size: 1.3rem; margin-bottom: 1rem; }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-item {
+            background: #f1f5f9;
+            padding: 0.8rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .project-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-date {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .education-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .achievements-list li {
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vicky Kumar</h1>
+        <p>Software Developer | AI/ML Enthusiast</p>
+        <div class="contact-info">
+            <a href="mailto:vyadav8518@gmail.com">
+                <i class="fas fa-envelope"></i> vyadav8518@gmail.com
+            </a>
+            <a href="tel:+919608506751">
+                <i class="fas fa-phone"></i> +91-9608506751
+            </a>
+            <a href="#">
+                <i class="fas fa-map-marker-alt"></i> Bengaluru
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>About Me</h2>
+            <p>I am a final year B.Tech CSE student at Jain University, Bangalore, with a strong foundation in various programming languages and a keen interest in Artificial Intelligence and Machine Learning. My academic excellence is reflected in my 85% score, and I'm passionate about developing innovative solutions using cutting-edge technologies.</p>
+        </section>
+
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Java</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">React.js</div>
+                <div class="skill-item">Node.js</div>
+                <div class="skill-item">SQL</div>
+                <div class="skill-item">MongoDB</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Golang</div>
+                <div class="skill-item">Swift</div>
+                <div class="skill-item">Kotlin</div>
+                <div class="skill-item">DSA</div>
+                <div class="skill-item">MERN Stack</div>
+                <div class="skill-item">MEAN Stack</div>
+                <div class="skill-item">Git</div>
+                <div class="skill-item">Rust</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Gemini-AI-Assistant</h3>
+                <div class="project-date">November 2024</div>
+                <p>A web-based chatbot application powered by Google's Gemini AI, built with Flask. This project demonstrates my ability to integrate cutting-edge AI technologies into practical applications.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Claude-Assist</h3>
+                <div class="project-date">November 2024</div>
+                <p>An intelligent chatbot web application powered by Anthropic's Claude AI, providing a seamless conversational interface that leverages advanced language capabilities to deliver helpful, informative responses.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Automated Financial Trading System</h3>
+                <div class="project-date">May 2024 - July 2024</div>
+                <p>Developed a Python-based automated trading system utilizing machine learning techniques to predict stock futures through historical data analysis, demonstrating proficiency in both financial technology and ML applications.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Hospital Management System</h3>
+                <div class="project-date">April 2024</div>
+                <p>A comprehensive web-based system featuring secure authentication, user-friendly interfaces, and real-time data management for enhanced operational efficiency in healthcare settings.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>B.Tech in Computer Science</h3>
+                <p>Jain University, Bangalore</p>
+                <p>Score: 85%</p>
+            </div>
+            <div class="education-item">
+                <h3>Class XII (CBSE)</h3>
+                <p>Score: 66.8% | 2020</p>
+            </div>
+            <div class="education-item">
+                <h3>Class X (CBSE)</h3>
+                <p>Score: 67.6% | 2018</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Achievements & Awards</h2>
+            <ul class="achievements-list">
+                <li>Received scholarship in B.Tech/B.E.</li>
+                <li>Won First prize in kabaddi, writing and essay competition at district level</li>
+                <li>Certified in Online Summer School on Usefulness of Remote Sensing & GIS for Environmental Studies</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
